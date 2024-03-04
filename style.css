@@ -1,0 +1,67 @@
+body{
+    background-color: silver;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+/*fonts.google.com*/
+.table{
+    width: 80%;
+    margin: 15px auto;
+    border: 2px solid black;
+    box-shadow: 0 0 10px gray;
+    border-collapse: collapse;
+}
+.table td, th{
+    border-bottom: 1px solid gray;
+    padding: 6px;
+}
+.table thead{
+    background-color: slategray;
+}
+.table tbody>tr>td:last-child{
+    text-align: right;
+}
+.table tbody tr:hover{
+    cursor: pointer;
+    background-color: rgb(77, 89, 100);
+    color: white;
+    font-weight: bold;
+}
+.table tfoot{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#container{
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    height: 140vh; /*vertical hight*/
+    padding: 15px;
+    margin: 0 auto;
+}
+/* media query-k */
+@media screen and (min-width: 648px) {
+    #container{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 800px) {
+    #container{
+        width: 90%;
+    }
+}
+@media screen and (min-width: 1280px) {
+    #container{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1680px) {
+    #container{
+        width: 60%;
+    }
+}
+
